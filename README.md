@@ -36,8 +36,17 @@ kubectl get pods -l run=busybox
 
 kubectl exec -ti busybox -- nslookup kubernetes
 
+VM IP Address
 
+| VM Name	          |   Purpose	  |  IP	                | 
+|-------------------------|---------------|---------------------| 
+| clster1-master          | 	 Master	  |  192.168.101.101	| 
+| cluster1-worker-1	  | 	 Worker1  |  192.168.101.201    | 
+| cluster1-worker-2	  |      Worker2  |  192.168.101.202    | 
 
-
+  
+some tips 
+1) https://medium.com/faun/certified-kubernetes-administrator-cka-tips-and-tricks-part-1-2e98e9b31de4
+2) https://github.com/raviacloudguy/awesome-cka-guide
 
 ```
