@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: init-container-test
+spec:
+  containers:
+  - name: application-container
+    image: alpine
+    command: ['sh', '-c', 'if [ -f /work/sharedfile.txt ]; then sleep 99999; else exit; fi']
+    volumeMounts:
+    - name: workdir-volume
+      mountPath: /work
+  initContainers:
+  - name: init-container
+    image: busybox:1.28
+    command: ['sh', '-c', 'mkdir /work; touch /work/sharedfile.txt']
+    volumeMounts:
+    - name: workdir-volume
+      mountPath: /work
+  volumes:
+  - name: workdir-volume
+    emptyDir: {}

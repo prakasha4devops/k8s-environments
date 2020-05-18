@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: busybox
+    disktype: ssd
+  name: busybox-command
+spec:
+  containers:
+  - command:
+    - sh
+    - -c
+    - sleep 3600
+    image: busybox
+    name: busybox
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+  nodeSelector:
+    disktype: ssd
+status: {}
+
+
+# k run busybox --image=busybox --restart=Never --dry-run=client -o yaml --command -- sh -c "sleep 3600" > busyb-pod-command.yaml

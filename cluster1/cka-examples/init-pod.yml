@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: init-pod
+spec:
+   initContainers:
+      - name: busybox
+        image: busybox
+        command: ['sh','-c','touch /mnt/data/test.txt; sleep 60;']
+        volumeMounts:
+           - name: pv
+             mountPath: /mnt/data
+   containers:
+        - name: nginx
+          image: nginx
+          command: ['sh','-c','test -f /mnt/data/test.txt; sleep 3600']
+          volumeMounts:
+             - name: pv
+               mountPath: /mnt/data
+   volumes:
+       - name: pv
+         hostPath:
+            path: /mnt/data
+            type: DirectoryOrCreate

@@ -1,0 +1,181 @@
+{
+    "apiVersion": "v1",
+    "kind": "Node",
+    "metadata": {
+        "annotations": {
+            "node.alpha.kubernetes.io/ttl": "0",
+            "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+        },
+        "creationTimestamp": "2020-04-24T22:57:34Z",
+        "labels": {
+            "beta.kubernetes.io/arch": "amd64",
+            "beta.kubernetes.io/os": "linux",
+            "kubernetes.io/arch": "amd64",
+            "kubernetes.io/hostname": "worker-1",
+            "kubernetes.io/os": "linux"
+        },
+        "name": "worker-1",
+        "resourceVersion": "414958",
+        "selfLink": "/api/v1/nodes/worker-1",
+        "uid": "86158b1f-97c3-49df-8db5-a38ecec3af29"
+    },
+    "spec": {},
+    "status": {
+        "addresses": [
+            {
+                "address": "192.168.5.21",
+                "type": "InternalIP"
+            },
+            {
+                "address": "worker-1",
+                "type": "Hostname"
+            }
+        ],
+        "allocatable": {
+            "cpu": "1",
+            "ephemeral-storage": "9306714916",
+            "hugepages-2Mi": "0",
+            "memory": "390308Ki",
+            "pods": "110"
+        },
+        "capacity": {
+            "cpu": "1",
+            "ephemeral-storage": "10098432Ki",
+            "hugepages-2Mi": "0",
+            "memory": "492708Ki",
+            "pods": "110"
+        },
+        "conditions": [
+            {
+                "lastHeartbeatTime": "2020-04-25T17:08:21Z",
+                "lastTransitionTime": "2020-04-25T17:08:21Z",
+                "message": "Weave pod has set this",
+                "reason": "WeaveIsUp",
+                "status": "False",
+                "type": "NetworkUnavailable"
+            },
+            {
+                "lastHeartbeatTime": "2020-05-04T11:10:26Z",
+                "lastTransitionTime": "2020-05-04T08:42:49Z",
+                "message": "kubelet has sufficient memory available",
+                "reason": "KubeletHasSufficientMemory",
+                "status": "False",
+                "type": "MemoryPressure"
+            },
+            {
+                "lastHeartbeatTime": "2020-05-04T11:10:26Z",
+                "lastTransitionTime": "2020-05-04T08:42:49Z",
+                "message": "kubelet has no disk pressure",
+                "reason": "KubeletHasNoDiskPressure",
+                "status": "False",
+                "type": "DiskPressure"
+            },
+            {
+                "lastHeartbeatTime": "2020-05-04T11:10:26Z",
+                "lastTransitionTime": "2020-05-04T08:42:49Z",
+                "message": "kubelet has sufficient PID available",
+                "reason": "KubeletHasSufficientPID",
+                "status": "False",
+                "type": "PIDPressure"
+            },
+            {
+                "lastHeartbeatTime": "2020-05-04T11:10:26Z",
+                "lastTransitionTime": "2020-05-04T08:42:49Z",
+                "message": "kubelet is posting ready status. AppArmor enabled",
+                "reason": "KubeletReady",
+                "status": "True",
+                "type": "Ready"
+            }
+        ],
+        "daemonEndpoints": {
+            "kubeletEndpoint": {
+                "Port": 10250
+            }
+        },
+        "images": [
+            {
+                "names": [
+                    "nginx@sha256:86ae264c3f4acb99b2dee4d0098c40cb8c46dcf9e1148f05d3a51c4df6758c12",
+                    "nginx:latest"
+                ],
+                "sizeBytes": 126774599
+            },
+            {
+                "names": [
+                    "nginx@sha256:d20aa6d1cae56fd17cd458f4807e0de462caf2336f0b70b5eeb69fcaaf30dd9c",
+                    "nginx:1.16"
+                ],
+                "sizeBytes": 126681697
+            },
+            {
+                "names": [
+                    "weaveworks/weave-kube@sha256:a1f58e75f24f02e1c2fa2a95b9e55a1b94930f455e75bd5f4799e1a55671971f",
+                    "weaveworks/weave-kube:2.6.2"
+                ],
+                "sizeBytes": 123297880
+            },
+            {
+                "names": [
+                    "coredns/coredns@sha256:3e2be1cec87aca0b74b7668bbe8c02964a95a402e45ceb51b2252629d608d03a",
+                    "coredns/coredns:1.2.2"
+                ],
+                "sizeBytes": 39220458
+            },
+            {
+                "names": [
+                    "weaveworks/weave-npc@sha256:5694b0b77003780333ccd1fc79810469434779cd86e926a17675cc5b70470459",
+                    "weaveworks/weave-npc:2.6.2"
+                ],
+                "sizeBytes": 36745988
+            },
+            {
+                "names": [
+                    "redis@sha256:83a3af36d5e57f2901b4783c313720e5fa3ecf0424ba86ad9775e06a9a5e35d0",
+                    "redis:alpine"
+                ],
+                "sizeBytes": 29802592
+            },
+            {
+                "names": [
+                    "nginx@sha256:763e7f0188e378fef0c761854552c70bbd817555dc4de029681a2e972e25e30e",
+                    "nginx:alpine"
+                ],
+                "sizeBytes": 19936884
+            },
+            {
+                "names": [
+                    "busybox@sha256:a8cf7ff6367c2afa2a90acd081b484cbded349a7076e7bdf37a05279f276bc12",
+                    "busybox:1.31",
+                    "busybox:latest"
+                ],
+                "sizeBytes": 1219598
+            },
+            {
+                "names": [
+                    "busybox@sha256:141c253bc4c3fd0a201d32dc1f493bcf3fff003b6df416dea4f41046e0f37d47",
+                    "busybox:1.28"
+                ],
+                "sizeBytes": 1146369
+            },
+            {
+                "names": [
+                    "k8s.gcr.io/pause@sha256:f78411e19d84a252e53bff71a4407a5686c46983a2c2eeed83929b888179acea",
+                    "k8s.gcr.io/pause:3.1"
+                ],
+                "sizeBytes": 742472
+            }
+        ],
+        "nodeInfo": {
+            "architecture": "amd64",
+            "bootID": "a73d7318-2182-4560-be06-9db1cdf61629",
+            "containerRuntimeVersion": "docker://19.3.8",
+            "kernelVersion": "4.15.0-91-generic",
+            "kubeProxyVersion": "v1.15.3",
+            "kubeletVersion": "v1.15.3",
+            "machineID": "d739e7a2e5044b22811a0311c469df58",
+            "operatingSystem": "linux",
+            "osImage": "Ubuntu 18.04.4 LTS",
+            "systemUUID": "D404889C-BAE9-B749-9BFC-CCEAC00BC8CD"
+        }
+    }
+}

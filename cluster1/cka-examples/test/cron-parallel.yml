@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: cron-parallel
+spec:
+  parallelism: 2
+  completions: 20
+  template:
+    metadata:
+      name: cron-parallel
+    spec:
+      containers:
+      - name: c
+        image: busybox
+        command: ["sh", "-c", "echo Hello CKA"]
+      restartPolicy: OnFailure

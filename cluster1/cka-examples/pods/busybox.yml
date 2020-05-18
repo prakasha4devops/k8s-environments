@@ -1,0 +1,92 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-05-05T11:23:37Z"
+  labels:
+    run: busybox
+  name: busybox
+  namespace: default
+  resourceVersion: "460904"
+  selfLink: /api/v1/namespaces/default/pods/busybox
+  uid: 3f2c22f7-5a1c-4f4e-81b0-79da163aa6c5
+spec:
+  containers:
+  - args:
+    - bin/sh
+    - -c
+    - sleep 3600; ls
+    image: busybox
+    imagePullPolicy: Always
+    name: busybox
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-qt52n
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: worker-2
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: default-token-qt52n
+    secret:
+      defaultMode: 420
+      secretName: default-token-qt52n
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-05-05T11:23:41Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-05-05T12:24:19Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-05-05T12:24:19Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-05-05T11:23:36Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://5774464130df974cb862612999aed2ee53bffb466e44349e9333405c6b66421f
+    image: busybox:1.31
+    imageID: docker-pullable://busybox@sha256:a8cf7ff6367c2afa2a90acd081b484cbded349a7076e7bdf37a05279f276bc12
+    lastState: {}
+    name: busybox
+    ready: false
+    restartCount: 0
+    state:
+      terminated:
+        containerID: docker://5774464130df974cb862612999aed2ee53bffb466e44349e9333405c6b66421f
+        exitCode: 0
+        finishedAt: "2020-05-05T12:24:16Z"
+        reason: Completed
+        startedAt: "2020-05-05T11:23:51Z"
+  hostIP: 192.168.5.22
+  phase: Succeeded
+  podIP: 10.32.0.6
+  qosClass: BestEffort
+  startTime: "2020-05-05T11:23:41Z"

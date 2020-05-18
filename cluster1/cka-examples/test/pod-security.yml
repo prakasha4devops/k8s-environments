@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-security
+spec:
+  securityContext:
+    runAsUser: 1005
+  containers:
+  - name: sec-ctx-demo
+    image: busybox
+    command: [ "sh", "-c", "ping 127.0.0.1" ]

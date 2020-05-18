@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx-limit-reg-pod
+  name: nginx-limit-reg-pod
+spec:
+  containers:
+  - image: nginx
+    name: nginx-limit-reg-pod
+    resources:
+      limits:
+        cpu: "1"
+        memory: 1Gi
+      requests:
+        cpu: "1"
+        memory: 1Gi
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
