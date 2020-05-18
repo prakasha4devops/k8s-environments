@@ -50,5 +50,5 @@ VM IP Address
 
 
 some tips 
-1) cka-tips-and-tricks [ckatipsandtricks](https://medium.com/faun/certified-kubernetes-administrator-cka-tips-and-tricks-part-1-2e98e9b31de4)
-2) awesome-cka-guide [awesome-cka-guide](https://github.com/raviacloudguy/awesome-cka-guide)
+1) cka-tips-and-tricks (https://medium.com/faun/certified-kubernetes-administrator-cka-tips-and-tricks-part-1-2e98e9b31de4)
+2) awesome-cka-guide(https://github.com/raviacloudguy/awesome-cka-guide)
