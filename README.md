@@ -1,7 +1,7 @@
 # Kubernetes K8S  Environments
 
 
-## setup and run
+## setup and run - latest kubernets version 1.18.2-00 
 You will start a 3 node cluster on your machine, one master and 2 worker. For this you need to install VirtualBox and vagrant, then:
 
 
