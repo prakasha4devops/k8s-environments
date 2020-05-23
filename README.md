@@ -57,4 +57,4 @@ CKA_Preparation_Guide.pdf (https://github.com/raviacloudguy/awesome-cka-guide/bl
 
 few notes 
 1) useful command ( https://github.com/prakasha4devops/k8s-environments/blob/master/cluster1/cka-examples/useful-command.txt )
-
+2)bookmarks (https://github.com/prakasha4devops/k8s-environments/blob/master/CKA-exam-bookmarks/bookmarks_5_13_20.html )
