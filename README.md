@@ -54,3 +54,7 @@ some tips
 PART 1 -5
 2) awesome-cka-guide(https://github.com/raviacloudguy/awesome-cka-guide)
 CKA_Preparation_Guide.pdf (https://github.com/raviacloudguy/awesome-cka-guide/blob/master/CKA_Preparation_Guide.pdf)
+
+few notes 
+1) useful command ( https://github.com/prakasha4devops/k8s-environments/blob/master/cluster1/cka-examples/useful-command.txt )
+
