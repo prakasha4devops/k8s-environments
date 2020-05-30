@@ -1,6 +1,13 @@
 #!/bin/sh
 apt-get update
-apt-get install -y etcd-client
+apt-get install -y etcd-client unzip
+
+# ---------- terraform installation --------------
+wget https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip -O terraform.zip
+unzip terraform.zip
+terraform
+mv terraform /usr/local/bin/terraform
+# ---------- terraform installation --------------
 
 kubeadm reset -f
 kubeadm init --apiserver-advertise-address=$MASTER_IP --pod-network-cidr=$POD_NW_CIDR
