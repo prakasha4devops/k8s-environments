@@ -49,7 +49,7 @@ VM IP Address
 ```
 
 
-some tips 
+<a href=#'>CKA exam some tips </a> 
 1) cka-tips-and-tricks (https://medium.com/faun/certified-kubernetes-administrator-cka-tips-and-tricks-part-1-2e98e9b31de4)
 PART 1 -5
 2) awesome-cka-guide(https://github.com/raviacloudguy/awesome-cka-guide)
