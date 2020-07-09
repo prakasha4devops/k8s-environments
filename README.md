@@ -49,7 +49,7 @@ VM IP Address
 ```
 
 
-<a href=#'>CKA exam some tips </a> 
+CKA exam some tips
 1) cka-tips-and-tricks (https://medium.com/faun/certified-kubernetes-administrator-cka-tips-and-tricks-part-1-2e98e9b31de4)
 PART 1 -5
 2) awesome-cka-guide(https://github.com/raviacloudguy/awesome-cka-guide)
@@ -58,5 +58,9 @@ CKA_Preparation_Guide.pdf (https://github.com/raviacloudguy/awesome-cka-guide/bl
 
 few notes 
 1) useful command ( https://github.com/prakasha4devops/k8s-environments/blob/master/cluster1/cka-examples/useful-command.txt )
+2) import bookmarks to your chrome browser (https://github.com/prakasha4devops/k8s-environments/blob/master/CKA-exam-bookmarks/bookmarks_5_13_20.html )
 
-2)bookmarks (https://github.com/prakasha4devops/k8s-environments/blob/master/CKA-exam-bookmarks/bookmarks_5_13_20.html )
+***Mumshad Mannambeth CKA course practice test , troublesting chapter and light test 3-4 times before exam. 
+
+Best luck 
+
