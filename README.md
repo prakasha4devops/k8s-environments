@@ -1,6 +1,29 @@
 # Kubernetes K8S  Environments
 
 
+CKA exam some tips
+1) cka-tips-and-tricks (https://medium.com/faun/certified-kubernetes-administrator-cka-tips-and-tricks-part-1-2e98e9b31de4)
+PART 1 -5
+2) awesome-cka-guide(https://github.com/raviacloudguy/awesome-cka-guide)
+CKA_Preparation_Guide.pdf (https://github.com/raviacloudguy/awesome-cka-guide/blob/master/CKA_Preparation_Guide.pdf)
+3) Practice Enough With These 150 Questions for the CKAD Exam (https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552)
+
+few notes 
+1) useful command ( https://github.com/prakasha4devops/k8s-environments/blob/master/cluster1/cka-examples/useful-command.txt )
+2) import bookmarks to your chrome browser (https://github.com/prakasha4devops/k8s-environments/blob/master/CKA-exam-bookmarks/bookmarks_5_13_20.html )
+
+***Mumshad Mannambeth CKA course practice test , troublesting chapter and light test 3-4 times before exam. 
+
+Best luck 
+
+CKAD Exam some tips
+
+1) mumshad course CKAD  - practice test  light test 3-4 times before exam. 
+2)CKAD Exercises
+ https://github.com/dgkanatsios/CKAD-exercises
+3) CKAD Prep
+https://github.com/bmuschko/ckad-prep
+
 ## setup and run - latest kubernets version 1.18.2-00 
 You will start a 3 node cluster on your machine, one master and 2 worker. For this you need to install VirtualBox and vagrant, then:
 
@@ -49,18 +72,4 @@ VM IP Address
 ```
 
 
-CKA exam some tips
-1) cka-tips-and-tricks (https://medium.com/faun/certified-kubernetes-administrator-cka-tips-and-tricks-part-1-2e98e9b31de4)
-PART 1 -5
-2) awesome-cka-guide(https://github.com/raviacloudguy/awesome-cka-guide)
-CKA_Preparation_Guide.pdf (https://github.com/raviacloudguy/awesome-cka-guide/blob/master/CKA_Preparation_Guide.pdf)
-3) Practice Enough With These 150 Questions for the CKAD Exam (https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552)
-
-few notes 
-1) useful command ( https://github.com/prakasha4devops/k8s-environments/blob/master/cluster1/cka-examples/useful-command.txt )
-2) import bookmarks to your chrome browser (https://github.com/prakasha4devops/k8s-environments/blob/master/CKA-exam-bookmarks/bookmarks_5_13_20.html )
-
-***Mumshad Mannambeth CKA course practice test , troublesting chapter and light test 3-4 times before exam. 
-
-Best luck 
 
