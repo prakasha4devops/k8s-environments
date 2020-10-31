@@ -21,7 +21,8 @@ Best luck
  time management , 12-15 questions in 1 hours, imperative command , troubleshoot service/pods/deployment
  
 1) mumshad course CKAD  - practice test  light test 3-4 times before exam. 
-2)CKAD Exercises
+
+2) CKAD Exercises
  https://github.com/dgkanatsios/CKAD-exercises
 3) CKAD Prep
 https://github.com/bmuschko/ckad-prep
