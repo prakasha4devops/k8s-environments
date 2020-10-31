@@ -1,7 +1,7 @@
 # Kubernetes K8S  Environments
 
 
-CKA exam some tips
+# CKA exam some tips
 1) cka-tips-and-tricks (https://medium.com/faun/certified-kubernetes-administrator-cka-tips-and-tricks-part-1-2e98e9b31de4)
 PART 1 -5
 2) awesome-cka-guide(https://github.com/raviacloudguy/awesome-cka-guide)
@@ -16,13 +16,16 @@ few notes
 
 Best luck 
 
-CKAD Exam some tips
+# CKAD Exam some tips
 
 1) mumshad course CKAD  - practice test  light test 3-4 times before exam. 
 2)CKAD Exercises
  https://github.com/dgkanatsios/CKAD-exercises
 3) CKAD Prep
 https://github.com/bmuschko/ckad-prep
+4) Practice Enough With These 150 Questions for the CKAD Exam (https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552
+5) ckad-notes
+https://github.com/nikhilagrawal577/ckad-notes
 
 ## setup and run - latest kubernets version 1.18.2-00 
 You will start a 3 node cluster on your machine, one master and 2 worker. For this you need to install VirtualBox and vagrant, then:
