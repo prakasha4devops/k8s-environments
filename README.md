@@ -5,7 +5,7 @@
 git clone git@github.com:prakasha4devops/k8s-environments.git
 cd k8s-environments/cluster1
 
-./up.sh  # to run
+./up.sh  # to run k8s envionment with 3 worker note
 
 vagrant ssh cluster1-master-1
 
