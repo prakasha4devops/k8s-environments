@@ -9,12 +9,18 @@ https://www.vagrantup.com/ , https://www.virtualbox.org/
 git clone git@github.com:prakasha4devops/k8s-environments.git
 cd k8s-environments/cluster1
 
-./up.sh  # to run k8s envionment with 3 worker note
+# To run k8s envionment with 3 worker note
+
+./up.sh 
+
+# To destroy your cluster
+
+./down.sh 
 
 # ssh to VM 
 
 ssh vagrant@192.168.101.101  # password is vagrant
-
+  or
 vagrant ssh cluster1-master-1
 
 
