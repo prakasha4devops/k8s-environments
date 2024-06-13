@@ -1,13 +1,22 @@
 # Kubernetes K8S  Environments and CKA exam some tips
 
 
+Please down the Oracle virtual box and vagrnat before running
+https://www.vagrantup.com/ , https://www.virtualbox.org/
+
+
 ```
 git clone git@github.com:prakasha4devops/k8s-environments.git
 cd k8s-environments/cluster1
 
 ./up.sh  # to run k8s envionment with 3 worker note
 
+# ssh to VM 
+
+ssh vagrant@192.168.101.101  # password is vagrant
+
 vagrant ssh cluster1-master-1
+
 
 vagrant@cluster1-master-1:~$kubectl version
 vagrant@cluster1-master-1:~$kubectl get node
