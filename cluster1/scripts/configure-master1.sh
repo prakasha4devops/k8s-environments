@@ -1,4 +1,6 @@
 #!/bin/sh
+set -e
+echo "==================== running configure-master1.sh ===================="
 cp /vagrant/scripts/resources/kube-scheduler-amazing.yaml /etc/kubernetes/manifests/
 #
 #source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
