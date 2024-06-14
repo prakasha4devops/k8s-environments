@@ -11,8 +11,8 @@ echo "=============== running set-hosts.sh ==============="
 
 # Update /etc/hosts about other hosts
 cat >> /etc/hosts <<EOF
-192.168.101.101  cluster1-master-1
-192.168.101.201  cluster1-worker-1
-192.168.101.202  cluster1-worker-2
+192.168.56.101  cluster1-master-1
+192.168.56.201  cluster1-worker-1
+192.168.56.202  cluster1-worker-2
 EOF
 
